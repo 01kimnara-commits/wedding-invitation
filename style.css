@@ -1,4 +1,18 @@
 *{
+    :root{
+    --sage:#7A9474;
+    --sage-dark:#5F7861;
+    --cream:#F8F4EC;
+    --ivory:#FFFDF8;
+    --gold:#C8A46A;
+    --text:#2F4335;
+
+    --shadow:0 15px 40px rgba(0,0,0,.10);
+
+    --radius:24px;
+
+    --transition:.35s ease;
+}
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -6,128 +20,144 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f7f3eb;
-    color:#444;
+    background:var(--cream);
+    color:var(--text);
+}
+.container{
+    width:min(1100px,92%);
+    margin:auto;
 }
 
 .hero{
-    width:100%;
-    height:100vh;
-    background:linear-gradient(rgba(56,90,72,.45),rgba(56,90,72,.45)),
-    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80');
-    background-size:cover;
-    background-position:center;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-.overlay{
     text-align:center;
-    background:rgba(255,255,255,.85);
-    padding:40px 30px;
-    border-radius:20px;
-    width:90%;
-    max-width:420px;
+    background:linear-gradient(180deg,#d8e3d0,#f8f5ef);
+    padding:30px;
 }
 
-.subtitle{
-    letter-spacing:3px;
-    color:#6d8b74;
-    margin-bottom:15px;
+.hero-content{
+    max-width:500px;
 }
 
-h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:52px;
-    color:#355e3b;
-}
-
-h1 span{
-    color:#b58b53;
-}
-
-.date{
-    margin:20px 0;
+.hero h3{
     font-size:18px;
-}
-
-button{
-    background:#6d8b74;
-    color:white;
-    border:none;
-    padding:14px 30px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
-}
-
-button:hover{
-    background:#355e3b;
-    transform:scale(1.05);
-  }
-/* ===========================
-   SECTION WELCOME
-=========================== */
-
-.welcome{
-    padding:80px 25px;
-    text-align:center;
-    background:#fdfbf7;
-}
-
-.welcome h2{
-    color:#355e3b;
-    font-family:'Cormorant Garamond',serif;
-    font-size:40px;
-    margin-bottom:20px;
-}
-
-.welcome p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-}
-
-/* ===========================
-   COUPLE
-=========================== */
-
-.couple{
-    padding:80px 20px;
-    background:#eef4ef;
-    text-align:center;
-}
-
-.couple h2{
-    font-family:'Cormorant Garamond',serif;
-    color:#355e3b;
-    font-size:42px;
-    margin-bottom:40px;
-}
-
-.card{
-    background:white;
-    max-width:420px;
-    margin:25px auto;
-    padding:35px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:34px;
-    color:#355e3b;
+    letter-spacing:4px;
+    color:#5d7b68;
     margin-bottom:15px;
 }
 
-.card p{
-    line-height:1.7;
-        }
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    font-size:56px;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn-open{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:16px 36px;
+
+    border-radius:999px;
+
+    background:var(--sage);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+}
+
+.btn-open:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--sage-dark);
+
+}
+
+.btn-open:hover{
+    background:var(--sage-dark);
+}
+.monogram{
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+    margin-bottom:25px;
+
+    border:2px solid var(--gold);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    color:var(--sage-dark);
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.photo-frame{
+
+    width:320px;
+    height:420px;
+
+    margin:40px auto;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    background:white;
+
+    border:8px solid rgba(255,255,255,.8);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.photo-frame:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.photo-frame img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
