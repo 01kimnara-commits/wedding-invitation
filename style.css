@@ -67,3 +67,67 @@ button:hover{
     background:#355e3b;
     transform:scale(1.05);
   }
+/* ===========================
+   SECTION WELCOME
+=========================== */
+
+.welcome{
+    padding:80px 25px;
+    text-align:center;
+    background:#fdfbf7;
+}
+
+.welcome h2{
+    color:#355e3b;
+    font-family:'Cormorant Garamond',serif;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.welcome p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ===========================
+   COUPLE
+=========================== */
+
+.couple{
+    padding:80px 20px;
+    background:#eef4ef;
+    text-align:center;
+}
+
+.couple h2{
+    font-family:'Cormorant Garamond',serif;
+    color:#355e3b;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    max-width:420px;
+    margin:25px auto;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    color:#355e3b;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+        }
