@@ -53,3 +53,57 @@ openButton.addEventListener("click", function(){
     });
 
 });
+// ==========================
+// REVEAL ANIMATION
+// ==========================
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSection(){
+
+    const trigger = window.innerHeight * 0.85;
+
+    reveals.forEach(section=>{
+
+        const top = section.getBoundingClientRect().top;
+
+        if(top < trigger){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSection);
+
+revealSection();
+// ==========================
+// LIGHTBOX GALLERY
+// ==========================
+
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImg = document.getElementById("lightbox-img");
+
+galleryImages.forEach(img=>{
+
+    img.addEventListener("click",()=>{
+
+        lightbox.style.display="flex";
+
+        lightboxImg.src=img.src;
+
+    });
+
+});
+
+lightbox.addEventListener("click",()=>{
+
+    lightbox.style.display="none";
+
+});
