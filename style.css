@@ -109,16 +109,16 @@ background-attachment:fixed;
 
     font-weight:600;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
-    transition:var(--transition);
+    transition:.4s;
 }
 
 .btn-open:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-8px);
 
-    background:var(--sage-dark);
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
 }
 
@@ -151,7 +151,7 @@ background-attachment:fixed;
 
     background:white;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -170,15 +170,17 @@ background-attachment:fixed;
 
     border:8px solid rgba(255,255,255,.8);
 
-    box-shadow:var(--shadow);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
-    transition:var(--transition);
+    transition:.4s;
 
 }
 
 .photo-frame:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
 }
 
@@ -371,7 +373,7 @@ background-image:url("assets/ornaments/leaf-left.png");
 
     border:8px solid #fff;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -387,6 +389,7 @@ background-image:url("assets/ornaments/leaf-left.png");
 /*==========================
 LOVE STORY
 ==========================*/
+ 
 
 .story{
 
@@ -440,7 +443,7 @@ LOVE STORY
 
     border-radius:20px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.06);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
     margin-bottom:40px;
 
@@ -553,7 +556,7 @@ COUNTDOWN
 
     align-items:center;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -612,7 +615,7 @@ EVENT
 
     border-radius:20px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -648,13 +651,15 @@ EVENT
 
     text-decoration:none;
 
-    transition:.3s;
+    transition:.4s;
 
 }
 
 .maps-button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
 }
 /* ==========================
@@ -756,7 +761,7 @@ EVENT
 
     transform:translateY(80px);
 
-    transition:1s ease;
+    transition:.4s;
 
 }
 
@@ -793,7 +798,7 @@ EVENT
 
     gap:24px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
     z-index:999;
 
@@ -805,13 +810,15 @@ EVENT
 
     font-size:22px;
 
-    transition:.3s;
+    transition:.4s;
 
 }
 
 .bottom-nav a:hover{
 
-    transform:translateY(-3px) scale(1.15);
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
 }
 html{
@@ -850,7 +857,7 @@ html{
 
     border-radius:24px;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -918,7 +925,7 @@ GALLERY
 
     transition:.35s;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
@@ -952,5 +959,48 @@ GALLERY
     max-height:90%;
 
     border-radius:20px;
+
+}
+/* ==========================
+   SECTION TITLE
+========================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:52px;
+
+    color:var(--sage-dark);
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#777;
+
+    line-height:1.8;
+
+}
+
+.divider{
+
+    width:170px;
+
+    margin:18px auto 25px;
+
+    display:block;
 
 }
