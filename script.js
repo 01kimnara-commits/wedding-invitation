@@ -53,3 +53,30 @@ openButton.addEventListener("click", function(){
     });
 
 });
+// ==========================
+// REVEAL ANIMATION
+// ==========================
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSection(){
+
+    const trigger = window.innerHeight * 0.85;
+
+    reveals.forEach(section=>{
+
+        const top = section.getBoundingClientRect().top;
+
+        if(top < trigger){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSection);
+
+revealSection();
