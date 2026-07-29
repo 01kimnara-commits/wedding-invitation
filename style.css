@@ -1,23 +1,60 @@
-*{
+:root{
+    --sage:#7A9474;
+    --sage-dark:#5F7861;
+    --cream:#F8F4EC;
+    --ivory:#FFFDF8;
+    --gold:#C8A46A;
+    --text:#2F4335;
+
+    --shadow:0 15px 40px rgba(0,0,0,.10);
+
+    --radius:24px;
+
+    --transition:.35s ease;
+
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f5ef;
-    color:#2f4635;
+    font-family:'Poppins',sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    background:
+    linear-gradient(
+    180deg,
+    #eef4e7,
+    #f8f4eb
+);
+
+background-attachment:fixed;
+}
+.container{
+    width:min(1100px,92%);
+    margin:auto;
 }
 
 .hero{
+
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    text-align:center;
-    background:linear-gradient(180deg,#d8e3d0,#f8f5ef);
-    padding:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+    180deg,
+    rgba(240,247,235,.95),
+    rgba(250,245,236,.95));
+
 }
 
 .hero-content{
@@ -32,6 +69,8 @@ body{
 }
 
 .hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
     font-size:56px;
     line-height:1.2;
     margin-bottom:15px;
@@ -43,15 +82,139 @@ body{
 }
 
 .btn-open{
-    display:inline-block;
-    padding:14px 32px;
-    background:#6f8d72;
-    color:#fff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:16px 36px;
+
+    border-radius:999px;
+
+    background:var(--sage);
+
+    color:white;
+
     text-decoration:none;
-    border-radius:40px;
-    transition:.3s;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
 }
 
 .btn-open:hover{
-    background:#56705b;
+
+    transform:translateY(-3px);
+
+    background:var(--sage-dark);
+
+}
+
+.btn-open:hover{
+    background:var(--sage-dark);
+}
+.monogram{
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+    margin-bottom:25px;
+
+    border:2px solid var(--gold);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    color:var(--sage-dark);
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.photo-frame{
+
+    width:320px;
+    height:420px;
+
+    margin:40px auto;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    background:white;
+
+    border:8px solid rgba(255,255,255,.8);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.photo-frame:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.photo-frame img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+.corner{
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+opacity:.12;
+
+background-repeat:no-repeat;
+
+background-size:contain;
+
+}
+
+.left{
+
+top:-20px;
+
+left:-20px;
+
+background-image:url("assets/ornaments/leaf-left.png");
+
+}
+
+.right{
+
+top:-20px;
+
+right:-20px;
+
+transform:scaleX(-1);
+
+background-image:url("assets/ornaments/leaf-left.png");
+
 }
