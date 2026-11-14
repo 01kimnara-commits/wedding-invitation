@@ -563,89 +563,76 @@ COUNTDOWN
     color:#777;
 
 }
+
 /*==========================
-EVENT
+EVENT - PREMIUM STYLE
 ==========================*/
 
-.event{
-
-    padding:90px 20px;
-
-    background:#fff;
-
-    text-align:center;
-
+.event {
+    padding: 100px 20px;
+    background: var(--ivory);
+    text-align: center;
 }
 
-.event-wrapper{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-
-    margin-top:40px;
-
+.event-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 45px;
 }
 
-.event-card{
-
-    width:320px;
-
-    background:#f8f7f2;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
+.event-card {
+    width: 320px;
+    padding: 38px 30px;
+    background: #F3EBDD;
+    border: 1px solid rgba(184, 149, 93, .35);
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(64, 90, 67, .10);
+    transition: all .35s ease;
 }
 
-.event-card h3{
-
-    color:var(--sage-dark);
-
-    margin-bottom:20px;
-
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(64, 90, 67, .16);
 }
 
-.event-card p{
-
-    line-height:1.9;
-
-    color:#666;
-
+.event-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--sage-dark);
+    margin-bottom: 20px;
 }
 
-.maps-button{
-
-    display:inline-block;
-
-    margin-top:50px;
-
-    background:var(--sage-dark);
-
-    color:white;
-
-    padding:14px 35px;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-    transition:.3s;
-
+.event-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #554D43;
 }
 
-.maps-button:hover{
-
-    transform:translateY(-3px);
-
+.maps-button {
+    display: inline-block;
+    margin-top: 45px;
+    background: var(--sage-dark);
+    color: #FFFCF5;
+    padding: 15px 38px;
+    border: 1px solid var(--sage-dark);
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(64, 90, 67, .15);
+    transition: all .35s ease;
 }
+
+.maps-button:hover {
+    transform: translateY(-3px);
+    background: var(--sage);
+}
+
 /* =========================
    GALERI PREWEDDING
 ========================= */
