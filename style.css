@@ -633,68 +633,94 @@ EVENT - PREMIUM STYLE
     background: var(--sage);
 }
 
+
 /* =========================
-   GALERI PREWEDDING
+   GALERI PREWEDDING PREMIUM
 ========================= */
 
 .gallery {
-    padding: 70px 20px;
+    padding: 90px 20px;
     text-align: center;
-    background-color: #fffdf7;
+    background: var(--ivory);
 }
 
 .gallery .section-title {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 
 .gallery .section-title h2 {
-    color: #65765b;
-    font-size: 28px;
-    margin-bottom: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--sage-dark);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 14px;
 }
 
 .gallery .section-title p {
-    color: #777;
-    font-size: 14px;
-    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+    color: #716B60;
+    font-size: 15px;
+    line-height: 1.9;
 }
 
 .gallery-container {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
 }
 
 .gallery-item {
     overflow: hidden;
-    border-radius: 15px;
-    border: 1px solid #dce2d4;
+    border-radius: 18px;
+    border: 1px solid rgba(184, 149, 93, .35);
+    background: #F3EBDD;
+    box-shadow: 0 8px 22px rgba(64, 90, 67, .09);
+    transition: all .35s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(64, 90, 67, .16);
 }
 
 .gallery-placeholder {
-    height: 220px;
-    background: #e8ecdf;
+    height: 240px;
+    background: linear-gradient(
+        145deg,
+        #E5EBDD,
+        #F3EBDD
+    );
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #65765b;
+    color: var(--sage-dark);
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: italic;
 }
 
 @media (max-width: 600px) {
+    .gallery {
+        padding: 70px 15px;
+    }
+
+    .gallery .section-title h2 {
+        font-size: 31px;
+    }
+
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
     }
 
     .gallery-placeholder {
-        height: 160px;
+        height: 170px;
         font-size: 12px;
     }
 }
+
 
 /* =========================
    RSVP & UCAPAN
