@@ -632,3 +632,142 @@ EVENT
     transform:translateY(-3px);
 
 }
+
+/* =========================
+   LOKASI ACARA
+========================= */
+
+.location {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #f5f2e9;
+}
+
+.location .section-title {
+    margin-bottom: 35px;
+}
+
+.location .section-title h2 {
+    color: #65765b;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.location .section-title p {
+    color: #777;
+    font-size: 14px;
+}
+
+.location-card {
+    max-width: 450px;
+    margin: auto;
+    padding: 35px 25px;
+    background: #fffdf7;
+    border: 1px solid #dce2d4;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(70, 85, 60, 0.08);
+}
+
+.location-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.location-card h3 {
+    color: #65765b;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.location-name {
+    color: #444;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.location-address {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.location-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #78896c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.location-button:hover {
+    background: #596b50;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   GALERI PREWEDDING
+========================= */
+
+.gallery {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #fffdf7;
+}
+
+.gallery .section-title {
+    margin-bottom: 35px;
+}
+
+.gallery .section-title h2 {
+    color: #65765b;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.gallery .section-title p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.gallery-container {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #dce2d4;
+}
+
+.gallery-placeholder {
+    height: 220px;
+    background: #e8ecdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #65765b;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-placeholder {
+        height: 160px;
+        font-size: 12px;
+    }
+}
