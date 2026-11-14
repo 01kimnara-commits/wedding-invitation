@@ -1012,3 +1012,22 @@ a {
     z-index: 1;
     pointer-events: none;
 }
+
+/* ORNAMEN BAGIAN BAWAH COVER */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 150px;
+    background-image: url("assets/ornamen/ornamen-sunda2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+}
