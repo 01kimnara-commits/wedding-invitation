@@ -774,3 +774,81 @@ EVENT
 .rsvp-button:hover {
     background: #596b50;
 }
+
+/* WEDDING GIFT */
+.gift {
+  padding: 70px 20px;
+  background: #f4f1e8;
+  text-align: center;
+}
+
+.gift-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.gift-subtitle {
+  color: #81917a;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.gift h2 {
+  color: #586b55;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin: 10px 0 20px;
+}
+
+.gift-description {
+  color: #6f756b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.gift-card {
+  background: #fffefa;
+  border: 1px solid #dce2d5;
+  border-radius: 16px;
+  padding: 25px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 5px 18px rgba(80, 100, 75, 0.07);
+}
+
+.gift-icon {
+  color: #82957c;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.gift-card h3 {
+  color: #586b55;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.gift-card p {
+  color: #777c72;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.gift-placeholder {
+  background: #eef1e9;
+  color: #71816c;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.gift-thanks {
+  color: #71816c;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 30px;
+  line-height: 1.8;
+}
