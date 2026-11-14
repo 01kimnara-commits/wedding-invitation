@@ -496,73 +496,87 @@ margin:20px 0;
 }
 
 }
+
 /*==========================
-COUNTDOWN
+COUNTDOWN - PREMIUM STYLE
 ==========================*/
 
-.countdown{
-
-    padding:90px 20px;
-
-    background:#f8f7f2;
-
-    text-align:center;
-
+.countdown {
+    padding: 100px 20px;
+    background: var(--cream);
+    text-align: center;
 }
 
-.countdown-wrapper{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    margin-top:40px;
-
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 45px;
 }
 
-.time-box{
-
-    width:120px;
-
-    height:120px;
-
-    background:white;
-
-    border-radius:20px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
+.time-box {
+    width: 125px;
+    height: 135px;
+    background: var(--ivory);
+    border: 1px solid rgba(184, 149, 93, .4);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 12px 28px rgba(64, 90, 67, .10);
+    transition: all .35s ease;
 }
 
-.time-box span{
-
-    font-size:40px;
-
-    font-weight:bold;
-
-    color:var(--sage-dark);
-
+.time-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(64, 90, 67, .16);
 }
 
-.time-box small{
-
-    margin-top:8px;
-
-    color:#777;
-
+.time-box span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--sage-dark);
 }
+
+.time-box small {
+    margin-top: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #81745F;
+}
+
+@media (max-width: 600px) {
+    .countdown {
+        padding: 75px 15px;
+    }
+
+    .countdown-wrapper {
+        gap: 12px;
+    }
+
+    .time-box {
+        width: 105px;
+        height: 115px;
+        border-radius: 18px;
+    }
+
+    .time-box span {
+        font-size: 40px;
+    }
+
+    .time-box small {
+        font-size: 10px;
+    }
+}
+
 
 /*==========================
 EVENT - PREMIUM STYLE
