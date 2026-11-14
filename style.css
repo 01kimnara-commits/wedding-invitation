@@ -986,3 +986,26 @@ a {
     background: #84977C;
     color: #FFFCF6;
 }
+
+/* ORNAMEN COVER SUNDA */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    background-image: url("assets/ornamen/ornamen-sunda1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.35;
+    pointer-events: none;
+}
