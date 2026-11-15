@@ -7,7 +7,7 @@ document.getElementById("openInvitation").addEventListener("click", function () 
  // COUNTDOWN
  // ==========================
 
-const weddingDate = new Date("2026-12-20T08:00:00").getTime();
+const weddingDate = new Date("2027-03-20T08:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
